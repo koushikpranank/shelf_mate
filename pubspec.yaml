@@ -1,0 +1,71 @@
+name: shelf_mate
+description: A modern Flutter-based inventory and sales management app for small businesses and vendors.
+publish_to: 'none' # Prevents accidental publishing to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Theming
+  google_fonts: ^6.1.0
+  cupertino_icons: ^1.0.8
+
+  # Charts and Data Visualization
+  fl_chart: ^1.0.0
+
+  # Local Database
+  sqflite: ^2.3.0
+  path: ^1.9.0  # instead of `any` — always specify version range
+
+  # PDF Generation & Printing
+  pdf: ^3.10.8
+  printing: ^5.11.1
+
+  # State Management
+  provider: ^6.1.2
+
+  # Local Storage
+  shared_preferences: ^2.2.3
+
+  # Animations & UI Enhancements (Modern UX)
+  flutter_animate: ^4.5.0
+  smooth_page_indicator: ^1.1.0
+  lottie: ^3.0.0
+
+  # Hive for local NoSQL storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.0.13  # recommended for Hive file storage in Flutter
+  collection: ^1.17.0
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+  # Code generation for Hive
+  hive_generator: ^1.1.3
+  build_runner: ^2.4.9
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    # - assets/images/
+    # - assets/icons/
+    # - assets/fonts/
+
+  # Uncomment below if using custom fonts
+  # fonts:
+  #   - family: CustomFont
+  #     fonts:
+  #       - asset: assets/fonts/CustomFont-Regular.ttf
+  #       - asset: assets/fonts/CustomFont-Bold.ttf
+  #         weight: 700
